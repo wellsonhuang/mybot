@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  ngrok:
+    image: wernight/ngrok
+    ports:
+      - 4040:4040
+    environment:
+      - NGROK_PROTOCOL=tcp
+      - NGROK_PORT=host.docker.internal:8080
+      - NGROK_AUTH=2MP5Vh7fjSVm9LkvYw2VuCbJzHA_4ghVJPSAT6iriLoXesu9V
